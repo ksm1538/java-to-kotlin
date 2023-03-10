@@ -57,3 +57,11 @@ private fun filterGames(
     return games
 }
 
+// filter 를 이용
+private fun filterGames2(
+    gameShop: List<Game>,
+    filter: (Game) -> Boolean   // 함수의 파라미터 및 리턴타입 설정
+): List<Game> {
+    return gameShop.filter(filter).toList()
+}
+
